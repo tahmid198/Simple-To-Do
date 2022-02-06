@@ -13,11 +13,17 @@ import androidx.recyclerview.widget.RecyclerView
 // Create the basic adapter extending from RecyclerView.Adapter
 // Note that we specify the custom ViewHolder which gives us access to our views
 class TaskItemAdapter(val listOfItems: List<String>,
-                      val longClickListener: onLongClickListener):
+                      val longClickListener: onLongClickListener,
+                      val clickListener: onClickListener):
     RecyclerView.Adapter<TaskItemAdapter.ViewHolder>()  {
 
+    // used for delete
     interface onLongClickListener {
         fun onItemLongClicked(position: Int) // let us define what happens when an item is clicked
+    }
+    // used for edit
+    interface onClickListener {
+        fun onItemClicked(position: Int)
     }
 
     // Usually involves inflating a layout from XML and returning the holder
@@ -37,7 +43,6 @@ class TaskItemAdapter(val listOfItems: List<String>,
 
         // Get the data model based on position
         val item = listOfItems.get(position)
-
         holder.textView.text = item
     }
 
@@ -57,6 +62,10 @@ class TaskItemAdapter(val listOfItems: List<String>,
 
             itemView.setOnLongClickListener {
                 longClickListener.onItemLongClicked(adapterPosition)
+                true
+            }
+            itemView.setOnClickListener {
+                clickListener.onItemClicked(adapterPosition)
                 true
             }
         }

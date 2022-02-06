@@ -1,6 +1,6 @@
 # Project 1 - *Simple To-Do*
 
-**Name of your app** is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
+**Simple To-Do** is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
 
 Submitted by: **Tahmid Zaman**
 
@@ -14,9 +14,9 @@ The following **required** functionality is completed:
 * [x] User can **successfully add and remove items** from the todo list
 * [x] User's **list of items persisted** upon modification and and retrieved properly on app restart
 
-<!-- The following **optional** features are implemented: -->
+The following **optional** features are implemented:
 
-<!-- * [ ] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list -->
+* [x] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list
 
 <!-- The following **additional** features are implemented: -->
 
@@ -33,7 +33,10 @@ GIF created with [RecordIt](https://recordit.co/)
 
 ## Notes
 
-<!-- Describe any challenges encountered while building the app. -->
+Describe any challenges encountered while building the app.
+
+I forgot all activities needed to be added to the manifest xml, so it took
+me some time to figure out why the editActivity was not working.
 
 ## License
 
