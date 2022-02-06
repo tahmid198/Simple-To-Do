@@ -27,7 +27,7 @@ The following **optional** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 <!-- <img src='./images/version1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
-![image walktrough](./images/version1.gif)
+![image walktrough](./images/version2.gif)
 
 GIF created with [RecordIt](https://recordit.co/)
 

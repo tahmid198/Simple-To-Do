@@ -37,10 +37,7 @@ class EditActivity : AppCompatActivity() {
             // Return to main screen
             onSubmit(updatedTask, intent.getIntExtra("position", 0))
         }
-
-
-
-
-
     }
 }
+
+// https://guides.codepath.org/android/Using-Intents-to-Create-Flows
